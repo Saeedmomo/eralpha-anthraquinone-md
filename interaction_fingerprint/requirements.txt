@@ -1,0 +1,10 @@
+# MDAnalysis 2.11.0 is the first release that parses tpx file version 138, written by
+# GROMACS 2024 and later. Earlier versions fail with
+#   "Your tpx version is 138, which this parser does not support"
+# on every trajectory in this project, including the published antagonist ones.
+MDAnalysis>=2.11.0
+numpy>=1.24
+pandas>=2.0
+
+# tests only
+pytest>=7.0

@@ -1,0 +1,17 @@
+# conda/mamba alternative to requirements.txt.
+#   mamba env create -f environment.yml && mamba activate era-fingerprint
+#
+# If conda-forge has not yet published MDAnalysis 2.11, install it with pip inside the
+# environment: 2.11.0 is the first release that reads tpx 138 (GROMACS 2024+), and an
+# older build will refuse every .tpr in this project.
+name: era-fingerprint
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.24
+  - pandas>=2.0
+  - pytest>=7.0
+  - pip
+  - pip:
+      - MDAnalysis>=2.11.0
