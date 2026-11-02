@@ -1,0 +1,55 @@
+{
+  "unchanged_reference_sha256": {
+    "fp_agonist_github_by_residue.csv": "ace5ea2f0c0113797f46d1005a061a5ca58a63a24e127b54cec3edf1727488eb",
+    "fp_agonist_project_by_residue.csv": "bfb400b8c9989abf82592110c7ef58640e3e0c73e37a0efd12bf6f45d35e2453",
+    "fp_github_by_residue.csv": "523f3b3a4142e72e07d879bb7ac4de03816d028d754c8693069799caeed1fc84",
+    "fp_github_by_type.csv": "ef8e9a44b4a73a05e24c60c2b59fc701310900b0f7e2c4b069a8f08f6f8b80dd",
+    "fp_project_by_residue.csv": "135ecbe8e89559cfa20a8bc371fab0b1e6a4d7b0c2ac3fac6327e4025f0a6060",
+    "fp_project_by_type.csv": "3a1a7990c8ff21d92da88709315d61fc4c7f31d242e561a8d442f066f10e3567"
+  },
+  "updated_matrices": {
+    "project": {
+      "file": "fp_antagonist25_project_by_residue.csv",
+      "rows": 501,
+      "runs": 25,
+      "extra_rows": 19,
+      "input_fields_preserved_exactly": true,
+      "pca_shape": [
+        25,
+        32
+      ],
+      "pca_percent_variance_first_two": [
+        57.7575837388889,
+        25.55001540741179
+      ],
+      "source_extra_sha256": "7ca4adcee6c1aebb55630ca27076b010d881634ca38fd32a96a395fcddd21b1a"
+    },
+    "github": {
+      "file": "fp_antagonist25_github_by_residue.csv",
+      "rows": 577,
+      "runs": 25,
+      "extra_rows": 22,
+      "input_fields_preserved_exactly": true,
+      "pca_shape": [
+        25,
+        35
+      ],
+      "pca_percent_variance_first_two": [
+        53.37811860206081,
+        33.07391785961187
+      ],
+      "source_extra_sha256": "d2fb1427a5a9b4075743624266bbd4c4d234ac36a27e730cbfa7eb7103e6fb9e"
+    }
+  },
+  "agonist_project": {
+    "pca_shape": [
+      9,
+      17
+    ],
+    "pca_percent_variance_first_two": [
+      74.60795806236187,
+      14.156600194470581
+    ]
+  },
+  "retained_runs_source_sha256": "b1b641afd13acc41648c3b6c3a6ba5baec7d78b63b15f6dda013605a8150c7ca"
+}

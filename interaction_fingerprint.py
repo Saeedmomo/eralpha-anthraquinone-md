@@ -1,45 +1,23 @@
-"""Per-residue ligand-protein interaction fingerprints for the Stage A trajectories.
+"""Residue-resolved contact fingerprints for ERalpha anthraquinone simulations.
 
-Derived from ligand_protein_interaction_forces.py in
-Saeedmomo/Binding-Affinity-Prediction-Using-Molecular-Dynamics, which classifies each
-ligand-residue contact as hydrogen bond, cation-pi, hydrophobic, ionic or water-bridged,
-weights it by a per-type constant and averages over frames. The original reads one
-structure file and aggregates by residue NAME. Four changes were needed here, all
-recorded so the difference from the published descriptor is explicit:
+The V9 workflow uses --criteria project with production TPR and XTC files.
+It applies bonded-hydrogen geometry, canonical AMBER residue names, periodic
+distances and receptor residue numbering. The original --criteria github
+thresholds and API default are retained for compatibility.
 
-  1. GROMACS input. The original takes a single PDB. These runs are prod.tpr + prod.xtc,
-     34 941 atoms (35 328 with the coactivator peptide), 501 frames at 100 ps. Reading a
-     .tpr written by GROMACS 2024 or later requires MDAnalysis 2.11 or newer, because
-     earlier releases do not support tpx file version 138; this is checked at startup.
+Output scores combine fixed contact weights in arbitrary units. The legacy
+water_bridge output name denotes a direct N/O/S proximity term below 2.8 A;
+it does not detect an intervening water molecule. Explicit water bridges in
+the manuscript were calculated separately. Hydrogen-bond candidate atoms in
+this implementation are N, O and S; the independent cpptraj inventory uses
+N and O. See README.md and the V9 Supporting Information for definitions.
 
-  2. AMBER residue names. The original matches against the 20 standard names, but
-     AMBER writes protonation states: this system has 6 HID and 7 HIE and no HIS at
-     all, so every histidine - including HIS524, the residue the whole project turns
-     on - would have scored exactly zero. Names are canonicalised before matching.
-
-  3. Periodic images. Distances and angles are computed under the minimum-image
-     convention rather than on raw coordinates, so a ligand that has drifted across a
-     box face is still measured against the protein and not against empty space. This
-     avoids unwrapping 34 941 atoms per frame.
-
-  4. Residue identity is kept. The published descriptor sums every ALA in the protein
-     into one number. For ligand design against one pocket that discards the only thing
-     worth knowing, so the same score is also emitted per residue, in ERalpha numbering
-     (prmtop resid + 305, the project's OFF).
-
---criteria github reproduces the repo's thresholds exactly, subject to 1-3 above.
---criteria project substitutes this project's established definitions: a hydrogen bond
-is a heavy-atom donor-acceptor pair within 3.5 A with a real D-H...A angle above 135
-degrees, measured with the actual bonded hydrogen rather than the original's
-nearest-neighbour stand-in, and hydrophobic contact is a ligand carbon within 4.0 A of
-a protein side-chain carbon or sulfur.
-
-NOTE ON UNITS. The per-type constants are labelled kcal/mol in the source. They are
-fixed weights applied to contact counts, not computed energies, and the column totals
-are weighted contact tallies. They are not interaction energies and must never be
-reported as such.
+The classification scheme derives from ligand_protein_interaction_forces.py
+in Saeedmomo/Binding-Affinity-Prediction-Using-Molecular-Dynamics.
 """
 from __future__ import annotations
+
+__author__ = "Said Moshawih"
 
 import argparse
 import os
@@ -53,14 +31,13 @@ MIN_MDANALYSIS = (2, 11, 0)
 
 
 def _require_mdanalysis(mda):
-    """GROMACS 2026 writes tpx 138, which MDAnalysis below 2.11 refuses to parse. The
-    failure is a bare parser traceback, so say what to do about it instead."""
+    """Check support for the GROMACS 2026 TPR inputs used in this study."""
     got = tuple(int(x) for x in mda.__version__.split('.')[:3]
                 if x.isdigit()) or (0,)
     if got < MIN_MDANALYSIS:
         raise SystemExit(
             'MDAnalysis %s is installed; this script needs >= %s to read the .tpr files '
-            'written by GROMACS 2024 and later (tpx 138). Install it with\n'
+            'written by GROMACS 2026 (tpx 138). Install it with\n'
             '    pip install "MDAnalysis>=%s"'
             % (mda.__version__, '.'.join(map(str, MIN_MDANALYSIS)),
                '.'.join(map(str, MIN_MDANALYSIS))))
@@ -215,8 +192,7 @@ def analyse(tpr, xtc, criteria='github', stride=1, ligand_sel='resname LIG',
             if prot_resname[j] in CHARGED:
                 frame['ionic'].add((prot_resname[j], prot_resid[j]))
 
-        # ---- water bridge, as the repo defines it (no water is actually involved;
-        #      it is a second, wider polar-contact term). Kept for comparability.
+        # ---- inherited direct polar-proximity term (legacy output name)
         li, pi = np.where(d < cutoff['water_bridge'])
         for i, j in zip(li, pi):
             if lig_el[i] in DONOR_ACCEPTOR and prot_el[j] in DONOR_ACCEPTOR:

@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-02",
+  "tests_passed": 6,
+  "elapsed_seconds": 18.98,
+  "MDAnalysis": "2.11.0",
+  "data_source": "Original local production TPR and XTC files",
+  "regression_requirement": "Maximum absolute difference zero for score and all five occupancy columns",
+  "script_sha256": "9f9a5891f5e9600bc5a84ea80add8c11ee3a8fb61f8632a891dfa0952023ea52"
+}

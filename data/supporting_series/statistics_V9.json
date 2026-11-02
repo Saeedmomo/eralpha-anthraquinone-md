@@ -1,0 +1,93 @@
+{
+  "author": "Said Moshawih",
+  "predictor": "free aryl hydroxyl count",
+  "analyses": [
+    {
+      "variant": "structure_complete51",
+      "n": 51,
+      "n_free_present": 12,
+      "count_vs_engagement": {
+        "r": 0.6729830983234972,
+        "p": 6.300509299480683e-08
+      },
+      "presence_vs_engagement": {
+        "r": 0.6796063584509249,
+        "p": 4.166566081974473e-08
+      },
+      "count_vs_score": {
+        "r": 0.2569350379112017,
+        "p": 0.06874625331957147
+      },
+      "presence_vs_score": {
+        "r": 0.30401510214194055,
+        "p": 0.030090117111791957
+      },
+      "engagement_mean_present_absent": [
+        0.9825416666666665,
+        0.0039435897435897435
+      ],
+      "score_mean_present_absent": [
+        -52.955104061634366,
+        -63.12954101100597
+      ]
+    },
+    {
+      "variant": "structure_complete_prep49",
+      "n": 49,
+      "n_free_present": 12,
+      "count_vs_engagement": {
+        "r": 0.6705974325601315,
+        "p": 1.3518456898318158e-07
+      },
+      "presence_vs_engagement": {
+        "r": 0.6772132238478016,
+        "p": 9.126009700127529e-08
+      },
+      "count_vs_score": {
+        "r": 0.25617182536572575,
+        "p": 0.07561937227374282
+      },
+      "presence_vs_score": {
+        "r": 0.3036403161457747,
+        "p": 0.033924225042367674
+      },
+      "engagement_mean_present_absent": [
+        0.9825416666666665,
+        0.004156756756756756
+      ],
+      "score_mean_present_absent": [
+        -52.955104061634366,
+        -63.17556674788858
+      ]
+    },
+    {
+      "variant": "structure_complete_prep_converged18",
+      "n": 18,
+      "n_free_present": 6,
+      "count_vs_engagement": {
+        "r": 0.7229815073725601,
+        "p": 0.0006987503099471725
+      },
+      "presence_vs_engagement": {
+        "r": 0.7207638789848733,
+        "p": 0.0007390082382742918
+      },
+      "count_vs_score": {
+        "r": 0.2212161817475643,
+        "p": 0.37768794391505933
+      },
+      "presence_vs_score": {
+        "r": 0.36886074063992813,
+        "p": 0.13199019229179698
+      },
+      "engagement_mean_present_absent": [
+        1.2694666666666667,
+        0.0018333333333333333
+      ],
+      "score_mean_present_absent": [
+        -51.23761975834222,
+        -60.282430760416624
+      ]
+    }
+  ]
+}

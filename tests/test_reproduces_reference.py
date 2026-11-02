@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Verification tests for interaction_fingerprint.py.
 
-The reference CSVs in ../reference were produced from the published antagonist-state
+The reference CSVs in ../reference were produced from the archived antagonist-state
 trajectories. The point of these tests is that a change to the script, the MDAnalysis
 version or the toolchain cannot silently alter the numbers: the descriptor must return
 the reference matrix with a maximum absolute difference of zero.
@@ -30,7 +30,7 @@ ROOT = os.environ.get('ERA_MD_ROOT')
 
 COLS = ['score', 'occ_hbond', 'occ_cation_pi', 'occ_hydrophobic',
         'occ_ionic', 'occ_water_bridge']
-# three antagonist runs that exercise all five contact types
+# Three antagonist runs used for trajectory regression checks.
 RUNS = ['dihydroxy23', 'alizarin_r3', 'estradiol_r1']
 
 needs_data = pytest.mark.skipif(
@@ -39,7 +39,7 @@ needs_data = pytest.mark.skipif(
 
 
 def test_mdanalysis_is_new_enough():
-    """GROMACS 2024+ writes tpx 138; MDAnalysis below 2.11 cannot read it."""
+    """The GROMACS 2026 tpx 138 inputs require MDAnalysis 2.11 or later."""
     mda = pytest.importorskip('MDAnalysis')
     got = tuple(int(x) for x in mda.__version__.split('.')[:3] if x.isdigit())
     assert got >= (2, 11, 0), (
@@ -57,7 +57,7 @@ def test_script_imports_and_shows_help():
 @needs_data
 @pytest.mark.parametrize('criteria', ['project', 'github'])
 def test_reproduces_reference_matrix(tmp_path, criteria):
-    """The descriptor must return the published antagonist matrix exactly."""
+    """The descriptor must return the archived antagonist matrix exactly."""
     prefix = str(tmp_path / ('out_%s' % criteria))
     out = subprocess.run(
         [sys.executable, SCRIPT, '--root', ROOT, '--runs'] + RUNS +

@@ -1,0 +1,30 @@
+{
+  "title": "ERalpha anthraquinone recognition simulation inputs and analysis data V9",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-01",
+  "version": "V9",
+  "description": "Simulation inputs, topologies, seed provenance, analysis scripts, fingerprint matrices, locally recorded predictions, umbrella and accelerated-weight-histogram sampling records, and processed historical Schrodinger-series reconstruction data supporting Hydroxyl availability and spacing govern anthraquinone recognition by estrogen receptor alpha. The archives cover 34 retained conventional runs, 45 production umbrella windows (708 ns nominal sampling) and 12 AWH walkers (87.504 ns recorded sampling). Coordinate trajectories and proprietary software are excluded. Original local prediction timestamps are preserved as provenance; no external registration is asserted. See the archived README and license-scope documentation for reproduction instructions and third-party exceptions.",
+  "creators": [
+    {
+      "name": "Moshawih, Said"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "estrogen receptor alpha",
+    "anthraquinone",
+    "molecular dynamics",
+    "umbrella sampling",
+    "interaction fingerprints",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Saeedmomo/eralpha-anthraquinone-md/releases/tag/v9-reproducibility-2026-11-01",
+      "relation": "isIdenticalTo",
+      "scheme": "url"
+    }
+  ],
+  "notes": "The data license applies to the authors' new numerical data and records. Third-party force-field material, existing software and adapted code retain their original terms as detailed in LICENSE_SCOPE.md. This metadata file does not claim that a Zenodo record or DOI already exists."
+}
