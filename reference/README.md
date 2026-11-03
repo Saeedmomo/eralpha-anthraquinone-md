@@ -1,9 +1,9 @@
-# Reference data and V9 ensemble scope
+# Reference data and V11 ensemble scope
 
 The original six reference files are retained unchanged. The antagonist files
 without an ensemble-size suffix contain the original balanced comparison: three
 trajectories for each of eight ligands, 24 trajectories in total. This comparison
-underlies manuscript Table 7 and SI Table S8 and Figure S5. The two agonist files
+underlies manuscript Table 2 and SI Table S8 and Figure S10. The two agonist files
 contain nine trajectories, three for each of three ligands.
 
 | Files | Ensemble | Residue rows |
@@ -18,15 +18,15 @@ contain nine trajectories, three for each of three ligands.
 
 The updated antagonist files append the original extra-replicate outputs for
 `anthraflavic_r5` to the balanced files, preserving every input field value. That
-source directory is reported as the retained 2,6-DHAQ replicate R4 in V9.
+source directory is reported as the retained 2,6-DHAQ replicate R4 in V11.
 `anthraflavic_r2`, the retained run with low direct bridging, remains included.
 The excluded original `anthraflavic_r4` is absent from all these matrices.
 `retained_runs.csv` is an unchanged copy of the reproducibility deposit's final
 34-trajectory inventory and records the source names and velocity seeds.
 
-## Reconstructing the V9 fingerprint PCA
+## Reconstructing the V11 fingerprint PCA
 
-The project-criteria PCA in main Figure 10 uses the updated 25-run antagonist
+The project-criteria PCA in main Figure 5 uses the updated 25-run antagonist
 file and the nine-run agonist project file, as separate ensembles. For each
 ensemble, retain residue labels whose maximum `score` across its trajectories
 is at least 0.1. Pivot `score` into a trajectory-by-residue matrix, filling absent

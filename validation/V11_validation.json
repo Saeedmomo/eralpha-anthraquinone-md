@@ -1,0 +1,166 @@
+{
+  "version": "V11",
+  "date": "2026-11-03",
+  "status": "passed",
+  "dataset_creator": "Said Moshawih",
+  "checks": {
+    "frame_bound": {
+      "status": "passed",
+      "runs": 22,
+      "frames": 11022,
+      "csv_sha256": "f85cbacf14cc542e7dad769f2458e4b1381f29a22632dfdd281af00cbbd6edc9",
+      "counts": {
+        "system_mean_span": {
+          "frames": 4552,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 4554,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 4552,
+          "bridged": 0
+        }
+      }
+    },
+    "equation_summaries": {
+      "status": "passed",
+      "runs": 22,
+      "mean_width_regimes": {
+        "beyond_contact_bound": 9,
+        "within_contact_bound_negative_reach_margin": 1,
+        "positive_reach_margin": 12
+      },
+      "positive_margin_bridge_range": [
+        0.48902195608782434,
+        0.998003992015968
+      ],
+      "critical_allowance_edges_A": [
+        2.5019911205869425,
+        3.059847999633731
+      ],
+      "equivalent_scanned_allowance_interval_A": [
+        2.51,
+        3.05
+      ],
+      "engaged_anchor_distance_means_A": {
+        "GLU353": 2.6652673289836026,
+        "HIS524": 2.9129437925556507,
+        "sum": 5.578211121539253
+      },
+      "fingerprint_score_rows": 482,
+      "maximum_score_reconstruction_error": 1.7763568394002505e-15,
+      "GLU353_23_score_mean": 10.996007984031936,
+      "ASP351_benzoxathiin_score_mean": 10.593479707252163,
+      "note": "Mean-width regimes summarize trajectories; the separate frame-bound verifier uses instantaneous spans."
+    },
+    "figure1_integrity": {
+      "source_generator": "msfig1.py",
+      "source_generator_sha256": "a29542406f0b41ae42130d7546cc1cec1687305185e9c9d864fd91a931d32cb8",
+      "source_image_sha256": "d65a140ef7061a4d74c01b684658e681854649998713c35a248cf9ba1169b6d9",
+      "output": "Figure1_V11.png",
+      "output_sha256": "cfd4fe1edf46fd092689cfff9383887e4bcfffd458ae49c8bcfd3471aaf444e7",
+      "dimensions": [
+        4112,
+        2100
+      ],
+      "regenerated_panel_F_baseline_pixel_identical": true,
+      "panels_A_to_E_pixel_identical": true,
+      "underlying_bar_data_and_geometry_unchanged": true,
+      "changed_pixel_bbox": [
+        2391,
+        1087,
+        4096,
+        1392
+      ],
+      "panel_F_interior_box": [
+        2390,
+        1070,
+        4099,
+        1774
+      ],
+      "canvas_to_source_translation": [
+        0,
+        0
+      ],
+      "reference_width_A": 14.22,
+      "exact_source_reference_width_A": 14.216,
+      "allowance_A": 2.8,
+      "contact_cutoff_A": 3.5,
+      "margin_zero_guide_A": 8.62,
+      "contact_bound_guide_A": 7.22,
+      "source_csv": "s4_an_geometry.csv",
+      "reference_source_row": "Anthraflavic acid (2,6-diOH)",
+      "reference_source_field": "pocket_GLU353_HIS524_mean_A",
+      "plot_interpretation": "Illustrative guides at the rounded first-2,6-run mean width; not universal cutoffs.",
+      "pdf_generated": false
+    }
+  },
+  "unchanged_original_numerical_reference_and_implementation_hashes": {
+    "data/supporting_series/anchor_engagement_V9.csv": {
+      "working_copy_sha256": "c5bcc42e6f2487d4017d59c839928132bb43145b528bc5a0bc122f27ade41a58",
+      "git_blob_sha256": "cee6ed8328454ffccd943c7816170c54f82f6c77ac6381b80d765aadf8ab2b41",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "data/supporting_series/engagement_definitions_V9.csv": {
+      "working_copy_sha256": "14d5e448e3deacc786c5d81c75b4846693a11d8e5d320258f6f32f6e7cdd74c0",
+      "git_blob_sha256": "0b8497fde30d64f76309f96692af3eb0900e9ea25b52678ae8047beb6272fef2",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "interaction_fingerprint.py": {
+      "working_copy_sha256": "9f9a5891f5e9600bc5a84ea80add8c11ee3a8fb61f8632a891dfa0952023ea52",
+      "git_blob_sha256": "49946e575ede3690f0d71e8d09d7eeed93616b8cc6a9c866e7a95cd410afe775",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_agonist_github_by_residue.csv": {
+      "working_copy_sha256": "ace5ea2f0c0113797f46d1005a061a5ca58a63a24e127b54cec3edf1727488eb",
+      "git_blob_sha256": "a5d1ea24ac0ae7207ff51b91ff301eaf9b21eddda57e419e36fbc70f265e86cd",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_agonist_project_by_residue.csv": {
+      "working_copy_sha256": "bfb400b8c9989abf82592110c7ef58640e3e0c73e37a0efd12bf6f45d35e2453",
+      "git_blob_sha256": "1e7b006a5b69e355ce636201b156a2adca19b7d7ba1172dd16e8f27b8afb8df2",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_antagonist25_github_by_residue.csv": {
+      "working_copy_sha256": "2d62627a94cadf7dd93f49a966d42f9259e91447a752abf253b6a45b4f8cf310",
+      "git_blob_sha256": "2d62627a94cadf7dd93f49a966d42f9259e91447a752abf253b6a45b4f8cf310",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_antagonist25_project_by_residue.csv": {
+      "working_copy_sha256": "34b9a4e540538c3e7989b64977558c1fc3da3afa676b779ae7cb809cca92b0b0",
+      "git_blob_sha256": "34b9a4e540538c3e7989b64977558c1fc3da3afa676b779ae7cb809cca92b0b0",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_github_by_residue.csv": {
+      "working_copy_sha256": "523f3b3a4142e72e07d879bb7ac4de03816d028d754c8693069799caeed1fc84",
+      "git_blob_sha256": "e8beb00decac060f5c3ef6b2b21fcf8e054f9b14578e5fa60a92620ea9308e35",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_github_by_type.csv": {
+      "working_copy_sha256": "ef8e9a44b4a73a05e24c60c2b59fc701310900b0f7e2c4b069a8f08f6f8b80dd",
+      "git_blob_sha256": "a9d215d0405b46d4b0a53603b1ed1e595dae05b9d07593133e76a5fc30c105cf",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_project_by_residue.csv": {
+      "working_copy_sha256": "135ecbe8e89559cfa20a8bc371fab0b1e6a4d7b0c2ac3fac6327e4025f0a6060",
+      "git_blob_sha256": "66c8fffd75d812bcda5c7921adc9bd32e80c90da10a515533fb7c029048a32ba",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/fp_project_by_type.csv": {
+      "working_copy_sha256": "3a1a7990c8ff21d92da88709315d61fc4c7f31d242e561a8d442f066f10e3567",
+      "git_blob_sha256": "1b955360b933674fbf1e7cbecc63f10647cfc9ce8d6753b128d29d9d16ed9b3c",
+      "content_equal_after_git_line_ending_normalization": true
+    },
+    "reference/retained_runs.csv": {
+      "working_copy_sha256": "b1b641afd13acc41648c3b6c3a6ba5baec7d78b63b15f6dda013605a8150c7ca",
+      "git_blob_sha256": "ebfb3695336b042c3e76e281fd38dde5bf55be1774924df428af28b031e9e336",
+      "content_equal_after_git_line_ending_normalization": true
+    }
+  },
+  "new_simulations": false,
+  "coordinate_trajectories_included": false,
+  "word_manuscripts_included": false,
+  "metadata_creator_count": 1
+}

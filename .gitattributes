@@ -1,0 +1,5 @@
+# Preserve the exact bytes used by the V11 release's recorded checksums.
+data/v11_geometry/** -text
+figures/v11_figure1/** -text
+analysis/** -text
+validation/V11_validation.json -text

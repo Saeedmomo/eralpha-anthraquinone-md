@@ -1,0 +1,531 @@
+{
+  "method": "Frame widths from the four-pair span.dat minimum; direct bridging from archived minimum ligand-oxygen GLU353/HIS524 distances <3.5 Å. Instantaneous hydroxyl spans reconstructed from the two atom indices in structure.json and saved whole-molecule dry_nofit.nc coordinates. Reconstructed means/SDs match archived structure.json within1e-6 Å. Same22-run set as check_v11.py.",
+  "no_input_or_trajectory_mutation": true,
+  "total_runs": 22,
+  "total_frames": 11022,
+  "totals": {
+    "system_mean_span": {
+      "frames": 4552,
+      "bridged": 0
+    },
+    "run_mean_span": {
+      "frames": 4554,
+      "bridged": 0
+    },
+    "instantaneous_span": {
+      "frames": 4552,
+      "bridged": 0
+    }
+  },
+  "run_records": [
+    {
+      "compound": "1,8-DHAQ",
+      "run": "danthron",
+      "atom_pair_one_based": "O3959 O3971",
+      "reconstructed_span_mean": 5.241516681504165,
+      "reconstructed_span_sd": 0.10804851776205639,
+      "system_mean_span": 5.2423294417753645,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "1,8-DHAQ",
+      "run": "danthron_r2",
+      "atom_pair_one_based": "O3959 O3971",
+      "reconstructed_span_mean": 5.240252611623061,
+      "reconstructed_span_sd": 0.10295960770333387,
+      "system_mean_span": 5.2423294417753645,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "1,8-DHAQ",
+      "run": "danthron_r3",
+      "atom_pair_one_based": "O3959 O3971",
+      "reconstructed_span_mean": 5.245219032198867,
+      "reconstructed_span_sd": 0.10182420577347759,
+      "system_mean_span": 5.2423294417753645,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "1,2-DHAQ",
+      "run": "alizarin",
+      "atom_pair_one_based": "O3969 O3971",
+      "reconstructed_span_mean": 2.799510983274483,
+      "reconstructed_span_sd": 0.07679327171390876,
+      "system_mean_span": 2.795504923122362,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "1,2-DHAQ",
+      "run": "alizarin_r2",
+      "atom_pair_one_based": "O3969 O3971",
+      "reconstructed_span_mean": 2.7815035531048715,
+      "reconstructed_span_sd": 0.07967889858202296,
+      "system_mean_span": 2.795504923122362,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "1,2-DHAQ",
+      "run": "alizarin_r3",
+      "atom_pair_one_based": "O3969 O3971",
+      "reconstructed_span_mean": 2.805500232987731,
+      "reconstructed_span_sd": 0.06979097915648162,
+      "system_mean_span": 2.795504923122362,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,3-DHAQ",
+      "run": "dihydroxy23",
+      "atom_pair_one_based": "O3968 O3970",
+      "reconstructed_span_mean": 2.8847942035176337,
+      "reconstructed_span_sd": 0.07001484568192916,
+      "system_mean_span": 2.891950225186418,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,3-DHAQ",
+      "run": "dihydroxy23_r2",
+      "atom_pair_one_based": "O3968 O3970",
+      "reconstructed_span_mean": 2.892524042515883,
+      "reconstructed_span_sd": 0.06910894414961664,
+      "system_mean_span": 2.891950225186418,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,3-DHAQ",
+      "run": "dihydroxy23_r3",
+      "atom_pair_one_based": "O3968 O3970",
+      "reconstructed_span_mean": 2.898532429525736,
+      "reconstructed_span_sd": 0.06918176566628549,
+      "system_mean_span": 2.891950225186418,
+      "counts": {
+        "system_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 501,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 501,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "17b-estradiol",
+      "run": "estradiol_r1",
+      "atom_pair_one_based": "O3958 O3973",
+      "reconstructed_span_mean": 11.052275471282366,
+      "reconstructed_span_sd": 0.11460961720936956,
+      "system_mean_span": 11.056755662188179,
+      "counts": {
+        "system_mean_span": {
+          "frames": 2,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 2,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 2,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "17b-estradiol",
+      "run": "estradiol_r2",
+      "atom_pair_one_based": "O3958 O3973",
+      "reconstructed_span_mean": 11.053066171625716,
+      "reconstructed_span_sd": 0.11875692122977947,
+      "system_mean_span": 11.056755662188179,
+      "counts": {
+        "system_mean_span": {
+          "frames": 9,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 9,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 9,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "17b-estradiol",
+      "run": "estradiol_r3",
+      "atom_pair_one_based": "O3958 O3973",
+      "reconstructed_span_mean": 11.064925343656457,
+      "reconstructed_span_sd": 0.12141740508987856,
+      "system_mean_span": 11.056755662188179,
+      "counts": {
+        "system_mean_span": {
+          "frames": 5,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 5,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 4,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,6-DHAQ",
+      "run": "anthraflavic",
+      "atom_pair_one_based": "O3961 O3970",
+      "reconstructed_span_mean": 10.160779099454196,
+      "reconstructed_span_sd": 0.08693784824114824,
+      "system_mean_span": 10.162447262387149,
+      "counts": {
+        "system_mean_span": {
+          "frames": 2,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 2,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 2,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,6-DHAQ",
+      "run": "anthraflavic_r2",
+      "atom_pair_one_based": "O3961 O3970",
+      "reconstructed_span_mean": 10.142962084564873,
+      "reconstructed_span_sd": 0.08825552543036655,
+      "system_mean_span": 10.162447262387149,
+      "counts": {
+        "system_mean_span": {
+          "frames": 10,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 12,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 11,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,6-DHAQ",
+      "run": "anthraflavic_r3",
+      "atom_pair_one_based": "O3961 O3970",
+      "reconstructed_span_mean": 10.169045329849073,
+      "reconstructed_span_sd": 0.08458899881264222,
+      "system_mean_span": 10.162447262387149,
+      "counts": {
+        "system_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 0,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,6-DHAQ",
+      "run": "anthraflavic_r5",
+      "atom_pair_one_based": "O3961 O3970",
+      "reconstructed_span_mean": 10.177002535680453,
+      "reconstructed_span_sd": 0.08349513973395413,
+      "system_mean_span": 10.162447262387149,
+      "counts": {
+        "system_mean_span": {
+          "frames": 15,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 15,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 15,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,7-DHAQ",
+      "run": "dihydroxy27_r1",
+      "atom_pair_one_based": "O3961 O3972",
+      "reconstructed_span_mean": 9.802824628663389,
+      "reconstructed_span_sd": 0.10000553670168581,
+      "system_mean_span": 9.809491562364942,
+      "counts": {
+        "system_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 0,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,7-DHAQ",
+      "run": "dihydroxy27_r2",
+      "atom_pair_one_based": "O3961 O3972",
+      "reconstructed_span_mean": 9.813776652280378,
+      "reconstructed_span_sd": 0.10302056651844795,
+      "system_mean_span": 9.809491562364942,
+      "counts": {
+        "system_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 0,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "2,7-DHAQ",
+      "run": "dihydroxy27_r3",
+      "atom_pair_one_based": "O3961 O3972",
+      "reconstructed_span_mean": 9.811873406151056,
+      "reconstructed_span_sd": 0.09894590616927386,
+      "system_mean_span": 9.809491562364942,
+      "counts": {
+        "system_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 0,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "benzoxathiin",
+      "run": "nativeE4D_r1",
+      "atom_pair_one_based": "O3962 O3970",
+      "reconstructed_span_mean": 11.687796095799145,
+      "reconstructed_span_sd": 0.16278430364480106,
+      "system_mean_span": 11.668589355718721,
+      "counts": {
+        "system_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 0,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "benzoxathiin",
+      "run": "nativeE4D_r2",
+      "atom_pair_one_based": "O3962 O3970",
+      "reconstructed_span_mean": 11.670923311182072,
+      "reconstructed_span_sd": 0.15935539029024756,
+      "system_mean_span": 11.668589355718721,
+      "counts": {
+        "system_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 0,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    },
+    {
+      "compound": "benzoxathiin",
+      "run": "nativeE4D_r3",
+      "atom_pair_one_based": "O3962 O3970",
+      "reconstructed_span_mean": 11.647048660174946,
+      "reconstructed_span_sd": 0.15762943924428285,
+      "system_mean_span": 11.668589355718721,
+      "counts": {
+        "system_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "run_mean_span": {
+          "frames": 0,
+          "bridged": 0
+        },
+        "instantaneous_span": {
+          "frames": 0,
+          "bridged": 0
+        }
+      },
+      "frames_equal_to_contact_cutoff": 0
+    }
+  ],
+  "derived_per_frame_csv": "v11_frame_bound_per_frame.csv",
+  "derived_per_frame_csv_sha256": "f85cbacf14cc542e7dad769f2458e4b1381f29a22632dfdd281af00cbbd6edc9",
+  "extraction_script_sha256": "5cb36d965118004298be680cc247d706eee07a7033f4d60f13964dc8d4085fa1"
+}

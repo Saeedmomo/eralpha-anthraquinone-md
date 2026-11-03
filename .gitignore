@@ -3,3 +3,4 @@ __pycache__/
 .pytest_cache/
 venv/
 *.egg-info/
+figures/v11_figure1/Figure1F_*_canvas.png

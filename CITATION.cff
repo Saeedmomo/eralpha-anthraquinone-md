@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: Please cite this versioned dataset when using these simulation inputs and analysis data.
 type: dataset
-title: ERalpha anthraquinone recognition simulation inputs and analysis data V9
-version: v9-reproducibility-2026-11-01
-date-released: '2026-11-01'
-url: https://github.com/Saeedmomo/eralpha-anthraquinone-md/releases/tag/v9-reproducibility-2026-11-01
+title: ERalpha anthraquinone molecular dynamics inputs and analysis data V11
+version: v11-reproducibility-2026-11-03
+date-released: '2026-11-03'
+url: https://github.com/Saeedmomo/eralpha-anthraquinone-md/releases/tag/v11-reproducibility-2026-11-03
 repository-code: https://github.com/Saeedmomo/eralpha-anthraquinone-md
 authors:
   - family-names: Moshawih
