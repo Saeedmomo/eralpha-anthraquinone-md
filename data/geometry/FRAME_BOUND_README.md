@@ -1,11 +1,11 @@
-# V11 instantaneous geometric-bound verification
+# Instantaneous geometric-bound verification
 
 The per-frame table contains 11,022 saved frames from the same twenty-two two-hydroxyl antagonist trajectories used in the manuscript. Frames within trajectories are correlated observations, not independent replicates.
 
 Run the standard-library verification with Python 3:
 
 ```text
-python verify_v11_frame_bound.py v11_frame_bound_per_frame.csv
+python verify_frame_bound.py frame_bound_per_frame.csv
 ```
 
 For each frame, the hard geometric exclusion is `cavity_width_A > instantaneous_hydroxyl_span_A + 7.0`. Direct anchor engagement is `max(GLU353_min_ligand_O_distance_A, HIS524_min_ligand_O_distance_A) < 3.5`. The verifier reproduces 4,552 excluded frames and zero frames with simultaneous engagement. It also checks all twenty-two 501-frame sequences and the agreement of reconstructed instantaneous-span means with the archived run means. No saved anchor distance equals the 3.5 Å cutoff.
@@ -16,4 +16,4 @@ For coordinate-level reconstruction, run `frame_bound_audit.py --data-root PATH_
 
 Coordinate trajectories are required only for reconstructing the derived table from original coordinates. The released per-frame table and standard-library verifier are sufficient to reproduce the reported 4,552/0 count. This comparison concerns sampled geometric engagement and does not estimate affinity or drug efficacy.
 
-SHA-256 of `v11_frame_bound_per_frame.csv`: `f85cbacf14cc542e7dad769f2458e4b1381f29a22632dfdd281af00cbbd6edc9`.
+SHA-256 of `frame_bound_per_frame.csv`: `f85cbacf14cc542e7dad769f2458e4b1381f29a22632dfdd281af00cbbd6edc9`.

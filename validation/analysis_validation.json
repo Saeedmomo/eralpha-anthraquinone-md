@@ -1,5 +1,4 @@
 {
-  "version": "V11",
   "date": "2026-11-03",
   "status": "passed",
   "dataset_creator": "Said Moshawih",
@@ -59,7 +58,7 @@
       "source_generator": "msfig1.py",
       "source_generator_sha256": "a29542406f0b41ae42130d7546cc1cec1687305185e9c9d864fd91a931d32cb8",
       "source_image_sha256": "d65a140ef7061a4d74c01b684658e681854649998713c35a248cf9ba1169b6d9",
-      "output": "Figure1_V11.png",
+      "output": "Figure1.png",
       "output_sha256": "cfd4fe1edf46fd092689cfff9383887e4bcfffd458ae49c8bcfd3471aaf444e7",
       "dimensions": [
         4112,
@@ -97,20 +96,19 @@
       "pdf_generated": false
     }
   },
-  "unchanged_original_numerical_reference_and_implementation_hashes": {
-    "data/supporting_series/anchor_engagement_V9.csv": {
+  "new_simulations": false,
+  "coordinate_trajectories_included": false,
+  "word_manuscripts_included": false,
+  "metadata_creator_count": 1,
+  "original_numerical_reference_hashes": {
+    "data/supporting_series/anchor_engagement.csv": {
       "working_copy_sha256": "c5bcc42e6f2487d4017d59c839928132bb43145b528bc5a0bc122f27ade41a58",
       "git_blob_sha256": "cee6ed8328454ffccd943c7816170c54f82f6c77ac6381b80d765aadf8ab2b41",
       "content_equal_after_git_line_ending_normalization": true
     },
-    "data/supporting_series/engagement_definitions_V9.csv": {
+    "data/supporting_series/engagement_definitions.csv": {
       "working_copy_sha256": "14d5e448e3deacc786c5d81c75b4846693a11d8e5d320258f6f32f6e7cdd74c0",
       "git_blob_sha256": "0b8497fde30d64f76309f96692af3eb0900e9ea25b52678ae8047beb6272fef2",
-      "content_equal_after_git_line_ending_normalization": true
-    },
-    "interaction_fingerprint.py": {
-      "working_copy_sha256": "9f9a5891f5e9600bc5a84ea80add8c11ee3a8fb61f8632a891dfa0952023ea52",
-      "git_blob_sha256": "49946e575ede3690f0d71e8d09d7eeed93616b8cc6a9c866e7a95cd410afe775",
       "content_equal_after_git_line_ending_normalization": true
     },
     "reference/fp_agonist_github_by_residue.csv": {
@@ -159,8 +157,6 @@
       "content_equal_after_git_line_ending_normalization": true
     }
   },
-  "new_simulations": false,
-  "coordinate_trajectories_included": false,
-  "word_manuscripts_included": false,
-  "metadata_creator_count": 1
+  "fingerprint_algorithm_unchanged_except_documentation": true,
+  "study_title": "ERalpha anthraquinone molecular dynamics inputs and analysis data"
 }

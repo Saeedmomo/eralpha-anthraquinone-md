@@ -1,6 +1,6 @@
 """Residue-resolved contact fingerprints for ERalpha anthraquinone simulations.
 
-The V9 workflow uses --criteria project with production TPR and XTC files.
+The project workflow uses --criteria project with production TPR and XTC files.
 It applies bonded-hydrogen geometry, canonical AMBER residue names, periodic
 distances and receptor residue numbering. The original --criteria github
 thresholds and API default are retained for compatibility.
@@ -10,7 +10,7 @@ water_bridge output name denotes a direct N/O/S proximity term below 2.8 A;
 it does not detect an intervening water molecule. Explicit water bridges in
 the manuscript were calculated separately. Hydrogen-bond candidate atoms in
 this implementation are N, O and S; the independent cpptraj inventory uses
-N and O. See README.md and the V9 Supporting Information for definitions.
+N and O. See README.md and the Supporting Information for definitions.
 
 The classification scheme derives from ligand_protein_interaction_forces.py
 in Saeedmomo/Binding-Affinity-Prediction-Using-Molecular-Dynamics.

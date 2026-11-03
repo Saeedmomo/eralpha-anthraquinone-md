@@ -1,9 +1,8 @@
 {
-  "title": "ERalpha anthraquinone molecular dynamics inputs and analysis data V11",
+  "title": "ERalpha anthraquinone molecular dynamics inputs and analysis data",
   "upload_type": "dataset",
   "publication_date": "2026-11-03",
-  "version": "V11",
-  "description": "Simulation inputs and derived analyses supporting Molecular dynamics guides anthraquinone drug design by resolving estrogen receptor alpha recognition geometry, manuscript V11. The V11 supplement supplies 11022 frame-level geometric measurements, reconstruction and verification scripts for the instantaneous bridging bound, equation-derived ensemble analyses, fingerprint-score checks, and the updated Figure 1 data and plotting source. The unchanged V9 release provides the simulation-input archives for 34 retained conventional runs, 45 umbrella windows (708 ns nominal) and 12 shared-bias AWH walkers (87.504 ns). Coordinate trajectories and proprietary software are excluded. Derived-data checks run without trajectories; rebuilding those measurements from original coordinates requires the saved trajectories. Local prediction files retain their original project timestamps; no external registration is claimed.",
+  "description": "Simulation inputs and derived analyses of anthraquinone recognition by estrogen receptor alpha. The dataset includes eleven thousand and twenty-two frame-level geometric measurements, reconstruction and verification scripts for the instantaneous bridging bound, equation-derived ensemble analyses, fingerprint-score checks, and hydroxyl-geometry figures and plotting sources. Simulation inputs cover 34 retained conventional runs, 45 umbrella windows (708 ns nominal) and 12 shared-bias AWH walkers (87.504 ns). Coordinate trajectories and proprietary software are excluded. Derived-data checks run without trajectories; reconstructing the measurements from original coordinates requires the saved trajectories. Local prediction files retain their original project timestamps; no external registration is claimed.",
   "creators": [
     {
       "name": "Moshawih, Said"
@@ -21,13 +20,8 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "https://github.com/Saeedmomo/eralpha-anthraquinone-md/releases/tag/v11-reproducibility-2026-11-03",
+      "identifier": "https://github.com/Saeedmomo/eralpha-anthraquinone-md/releases/tag/study-data-2026-11-03",
       "relation": "isIdenticalTo",
-      "scheme": "url"
-    },
-    {
-      "identifier": "https://github.com/Saeedmomo/eralpha-anthraquinone-md/releases/tag/v9-reproducibility-2026-11-01",
-      "relation": "isNewVersionOf",
       "scheme": "url"
     }
   ],

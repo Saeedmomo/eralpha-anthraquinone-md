@@ -1,4 +1,4 @@
-"""Verify the V11 geometric-bound counts from the released per-frame CSV.
+"""Verify the study geometric-bound counts from the released per-frame CSV.
 
 Python 3 standard library only. No coordinate trajectory or scientific package is
 needed for this derived-data verification. For coordinate-level reconstruction,
@@ -14,7 +14,7 @@ import math
 
 parser = argparse.ArgumentParser()
 parser.add_argument('csv_file', nargs='?', type=Path,
-                    default=Path(__file__).with_name('v11_frame_bound_per_frame.csv'))
+                    default=Path(__file__).with_name('frame_bound_per_frame.csv'))
 args = parser.parse_args()
 with args.csv_file.open(newline='', encoding='utf-8') as fh:
     rows = list(csv.DictReader(fh))

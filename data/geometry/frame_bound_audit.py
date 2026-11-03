@@ -1,4 +1,4 @@
-"""Read-only verification of V11's framewise bridging-bound statement.
+"""Read-only verification of the study's framewise bridging-bound statement.
 
 No simulation input or saved trajectory is altered. Output is an audit JSON only.
 Run in the existing WSL /home/saeed/mdaenv environment.
@@ -74,13 +74,13 @@ for name, runs in GROUPS:
                      'system_mean_span': group_mean, 'counts': per_run,
                      'frames_equal_to_contact_cutoff': int(((glu == 3.5) | (his == 3.5)).sum())})
 
-csv_path = args.output_dir / 'v11_frame_bound_per_frame.csv'
+csv_path = args.output_dir / 'frame_bound_per_frame.csv'
 with csv_path.open('w', newline='', encoding='utf-8') as fh:
     writer = csv.DictWriter(fh, fieldnames=list(frame_rows[0]))
     writer.writeheader()
     writer.writerows(frame_rows)
 report = {
-    'method': 'Frame widths from the four-pair span.dat minimum; direct bridging from archived minimum ligand-oxygen GLU353/HIS524 distances <3.5 Å. Instantaneous hydroxyl spans reconstructed from the two atom indices in structure.json and saved whole-molecule dry_nofit.nc coordinates. Reconstructed means/SDs match archived structure.json within1e-6 Å. Same22-run set as check_v11.py.',
+    'method': 'Frame widths from the four-pair span.dat minimum; direct bridging from archived minimum ligand-oxygen GLU353/HIS524 distances <3.5 Å. Instantaneous hydroxyl spans reconstructed from the two atom indices in structure.json and saved whole-molecule dry_nofit.nc coordinates. Reconstructed means/SDs match archived structure.json within1e-6 Å. The same twenty-two-run analysis set is used throughout.',
     'no_input_or_trajectory_mutation': True,
     'total_runs': len(rows), 'total_frames': 501 * len(rows),
     'totals': totals, 'run_records': rows,

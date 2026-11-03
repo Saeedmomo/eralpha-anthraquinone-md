@@ -1,5 +1,5 @@
-# Preserve the exact bytes used by the V11 release's recorded checksums.
-data/v11_geometry/** -text
-figures/v11_figure1/** -text
+# Preserve the exact bytes used by the study-data checksums.
+data/geometry/** -text
+figures/hydroxyl_geometry/** -text
 analysis/** -text
-validation/V11_validation.json -text
+validation/analysis_validation.json -text

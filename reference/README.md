@@ -1,4 +1,4 @@
-# Reference data and V11 ensemble scope
+# Reference data and ensemble scope
 
 The original six reference files are retained unchanged. The antagonist files
 without an ensemble-size suffix contain the original balanced comparison: three
@@ -18,13 +18,13 @@ contain nine trajectories, three for each of three ligands.
 
 The updated antagonist files append the original extra-replicate outputs for
 `anthraflavic_r5` to the balanced files, preserving every input field value. That
-source directory is reported as the retained 2,6-DHAQ replicate R4 in V11.
+source directory is reported as the retained 2,6-DHAQ replicate R4 in the study.
 `anthraflavic_r2`, the retained run with low direct bridging, remains included.
 The excluded original `anthraflavic_r4` is absent from all these matrices.
 `retained_runs.csv` is an unchanged copy of the reproducibility deposit's final
 34-trajectory inventory and records the source names and velocity seeds.
 
-## Reconstructing the V11 fingerprint PCA
+## Reconstructing the fingerprint PCA
 
 The project-criteria PCA in main Figure 5 uses the updated 25-run antagonist
 file and the nine-run agonist project file, as separate ensembles. For each
@@ -46,7 +46,7 @@ matrix. It has not been relabelled as a 25-run source matrix: the updated input
 was assembled from the balanced file and the extra-replicate file during figure
 generation. The files added here expose the complete updated long-format data.
 
-`validation_v9.json` records the unchanged original file hashes, exact field
+`validation.json` records the unchanged original file hashes, exact field
 preservation, ensemble sizes and recomputed variance percentages. It reports
 data-integrity checks and PCA reconstruction; it does not assert a new run of
 the trajectory-dependent regression tests.

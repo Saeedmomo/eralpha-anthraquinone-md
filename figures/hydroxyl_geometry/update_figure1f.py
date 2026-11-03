@@ -55,8 +55,8 @@ def geometry(fig):
              'images':[np.asarray(i.get_array()).tolist() for i in ax.images],
              'xlim':list(ax.get_xlim()),'ylim':list(ax.get_ylim())} for ax in fig.axes]
 
-for version,code in [('baseline',source),('V11',source.replace(old,new))]:
-    scope={'__name__':'v11_figure1_generator','__file__':str(source_path)}
+for version,code in [('baseline',source),('study',source.replace(old,new))]:
+    scope={'__name__':'study_figure1_generator','__file__':str(source_path)}
     exec(compile(code,str(source_path),'exec'),scope)
     def save(fig,ignored_name,version=version):
         global print_bbox
@@ -72,10 +72,10 @@ for version,code in [('baseline',source),('V11',source.replace(old,new))]:
         fig.savefig(WORK/f'Figure1F_{version}_canvas.png',bbox_inches=print_bbox,pad_inches=0)
     scope['save']=save
     scope['main']()
-assert records['baseline']==records['V11'],'Geometry or underlying plot data changed'
-original=Image.open(WORK/'Figure1_current.png').convert('RGBA')
+assert records['baseline']==records['study'],'Geometry or underlying plot data changed'
+original=Image.open(WORK/'Figure1_original.png').convert('RGBA')
 baseline=Image.open(WORK/'Figure1F_baseline_canvas.png').convert('RGBA')
-canvas=Image.open(WORK/'Figure1F_V11_canvas.png').convert('RGBA')
+canvas=Image.open(WORK/'Figure1F_study_canvas.png').convert('RGBA')
 def color_bbox(im,color=(0,114,178,255)):
     points=np.argwhere((np.asarray(im)==np.array(color)).all(axis=2))
     return (int(points[:,1].min()),int(points[:,0].min()),int(points[:,1].max()+1),int(points[:,0].max()+1))
@@ -91,7 +91,7 @@ baseline_bbox=ImageChops.difference(original.crop(target_box).convert('RGB'),bas
 assert baseline_bbox is None,('Original F plot did not regenerate identically',baseline_bbox,target_box,box)
 updated=original.copy()
 updated.paste(canvas.crop(box),target_box)
-updated.save(WORK/'Figure1_V11.png')
+updated.save(WORK/'Figure1.png')
 diff_bbox=ImageChops.difference(original.convert('RGB'),updated.convert('RGB')).getbbox()
 assert diff_bbox is not None and diff_bbox[0]>2000 and diff_bbox[1]>900, diff_bbox
 # The region through panels A–E must remain pixel-identical; all differences
@@ -99,11 +99,11 @@ assert diff_bbox is not None and diff_bbox[0]>2000 and diff_bbox[1]>900, diff_bb
 assert ImageChops.difference(original.crop((0,0,2000,2100)).convert('RGB'),updated.crop((0,0,2000,2100)).convert('RGB')).getbbox() is None
 assert ImageChops.difference(original.crop((0,0,4112,900)).convert('RGB'),updated.crop((0,0,4112,900)).convert('RGB')).getbbox() is None
 data={
- 'source_generator':str(source_path),
+ 'source_generator':source_path.name,
  'source_generator_sha256':hashlib.sha256(source_path.read_bytes()).hexdigest(),
- 'source_image_sha256':hashlib.sha256((WORK/'Figure1_current.png').read_bytes()).hexdigest(),
- 'output':str(WORK/'Figure1_V11.png'),
- 'output_sha256':hashlib.sha256((WORK/'Figure1_V11.png').read_bytes()).hexdigest(),
+ 'source_image_sha256':hashlib.sha256((WORK/'Figure1_original.png').read_bytes()).hexdigest(),
+ 'output':'Figure1.png',
+ 'output_sha256':hashlib.sha256((WORK/'Figure1.png').read_bytes()).hexdigest(),
  'dimensions':updated.size,
  'regenerated_panel_F_baseline_pixel_identical':True,
  'panels_A_to_E_pixel_identical':True,
@@ -113,7 +113,7 @@ data={
  'reference_width_A':14.22,'exact_source_reference_width_A':14.216,
  'allowance_A':2.8,'contact_cutoff_A':3.5,
  'margin_zero_guide_A':8.62,'contact_bound_guide_A':7.22,
- 'source_csv':str(WORK/'s4_an_geometry.csv'),
+ 'source_csv':'s4_an_geometry.csv',
  'reference_source_row':'Anthraflavic acid (2,6-diOH)',
  'reference_source_field':'pocket_GLU353_HIS524_mean_A',
  'plot_interpretation':'Illustrative guides at the rounded first-2,6-run mean width; not universal cutoffs.',

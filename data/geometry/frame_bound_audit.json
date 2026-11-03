@@ -1,5 +1,5 @@
 {
-  "method": "Frame widths from the four-pair span.dat minimum; direct bridging from archived minimum ligand-oxygen GLU353/HIS524 distances <3.5 Å. Instantaneous hydroxyl spans reconstructed from the two atom indices in structure.json and saved whole-molecule dry_nofit.nc coordinates. Reconstructed means/SDs match archived structure.json within1e-6 Å. Same22-run set as check_v11.py.",
+  "method": "Frame widths from the four-pair span.dat minimum; direct bridging from archived minimum ligand-oxygen GLU353/HIS524 distances <3.5 Å. Instantaneous hydroxyl spans reconstructed from the two atom indices in structure.json and saved whole-molecule dry_nofit.nc coordinates. Reconstructed means/SDs match archived structure.json within1e-6 Å. The same twenty-two-run analysis set is used throughout.",
   "no_input_or_trajectory_mutation": true,
   "total_runs": 22,
   "total_frames": 11022,
@@ -525,7 +525,7 @@
       "frames_equal_to_contact_cutoff": 0
     }
   ],
-  "derived_per_frame_csv": "v11_frame_bound_per_frame.csv",
+  "derived_per_frame_csv": "frame_bound_per_frame.csv",
   "derived_per_frame_csv_sha256": "f85cbacf14cc542e7dad769f2458e4b1381f29a22632dfdd281af00cbbd6edc9",
   "extraction_script_sha256": "5cb36d965118004298be680cc247d706eee07a7033f4d60f13964dc8d4085fa1"
 }

@@ -1,4 +1,4 @@
-"""Reproduce V11's equation-derived numerical summaries from released records.
+"""Reproduce the study's equation-derived numerical summaries from released records.
 
 This verification uses Python 3's standard library. It does not require a saved
 coordinate trajectory and does not rerun molecular dynamics.
@@ -11,7 +11,7 @@ import math
 import statistics
 
 ROOT = Path(__file__).resolve().parents[1]
-with (ROOT/'data/v11_geometry/v11_frame_bound_per_frame.csv').open(newline='', encoding='utf-8') as fh:
+with (ROOT/'data/geometry/frame_bound_per_frame.csv').open(newline='', encoding='utf-8') as fh:
     frames = list(csv.DictReader(fh))
 by_run = defaultdict(list)
 for row in frames:

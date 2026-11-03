@@ -1,9 +1,0 @@
-system,ligand_oxygen,classification,mean_OH_to_peri_O_A,occ_chelated,occ_donating_to_protein,occ_free,occ_chelated_window,modal_protein_partner_resid
-"Danthron (1,8-diOH)",O3959,alpha (peri),2.636,1.0,0.0,0.0,1.0,106
-"Danthron (1,8-diOH)",O3971,alpha (peri),2.646,1.0,0.0,0.0,1.0,106
-"Alizarin (1,2-diOH)",O3969,beta,5.181,0.0,0.9601,0.0399,0.0,608
-"Alizarin (1,2-diOH)",O3971,alpha (peri),2.611,1.0,0.0,0.0,1.0,600
-"2,3-dihydroxyanthraquinone",O3968,beta,5.078,0.0,1.0,0.0,0.0,128
-"2,3-dihydroxyanthraquinone",O3970,beta,5.066,0.0,1.0,0.0,0.0,128
-"Anthraflavic acid (2,6-diOH)",O3961,beta,5.102,0.0,0.9681,0.0319,0.0,129
-"Anthraflavic acid (2,6-diOH)",O3970,beta,5.065,0.0,0.9581,0.0419,0.0,608
