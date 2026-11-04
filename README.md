@@ -2,7 +2,7 @@
 
 Author and maintainer: [Said Moshawih](https://github.com/Saeedmomo).
 
-This repository contains the interaction-fingerprint implementation and reference data for *Molecular dynamics guides anthraquinone drug design by resolving estrogen receptor α recognition geometry*.
+This repository contains simulation inputs, geometric analyses and residue interaction fingerprints for anthraquinone recognition by estrogen receptor α. The study examines how hydroxyl availability, donor spacing and receptor cavity geometry can inform molecular design.
 
 ## Study data and simulation inputs
 
