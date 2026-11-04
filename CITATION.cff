@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: Please cite this dataset when using these simulation inputs and analysis data.
 type: dataset
 title: ERalpha anthraquinone molecular dynamics inputs and analysis data
-date-released: '2026-11-03'
+date-released: '2026-11-04'
 url: https://github.com/Saeedmomo/eralpha-anthraquinone-md/releases/tag/study-data-2026-11-03
 repository-code: https://github.com/Saeedmomo/eralpha-anthraquinone-md
 authors:

@@ -1,7 +1,7 @@
 {
   "title": "ERalpha anthraquinone molecular dynamics inputs and analysis data",
   "upload_type": "dataset",
-  "publication_date": "2026-11-03",
+  "publication_date": "2026-11-04",
   "description": "Simulation inputs and derived analyses of anthraquinone recognition by estrogen receptor alpha. The dataset includes eleven thousand and twenty-two frame-level geometric measurements, reconstruction and verification scripts for the instantaneous bridging bound, equation-derived ensemble analyses, fingerprint-score checks, and hydroxyl-geometry figures and plotting sources. Simulation inputs cover 34 retained conventional runs, 45 umbrella windows (708 ns nominal) and 12 shared-bias AWH walkers (87.504 ns). Coordinate trajectories and proprietary software are excluded. Derived-data checks run without trajectories; reconstructing the measurements from original coordinates requires the saved trajectories. Local prediction files retain their original project timestamps; no external registration is claimed.",
   "creators": [
     {
